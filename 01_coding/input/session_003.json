@@ -1,0 +1,51 @@
+{
+  "tutor": {
+    "dojo_id": "fundamentals",
+    "module_id": "variables",
+    "challenge_id": "env-vars",
+    "challenge_description": "Set the environment variable SECRET to the value mytoken123 and then run /challenge/check to verify it. Use the export command in bash.",
+    "user_id": "user_77",
+    "gpt_failures": [],
+    "interactions": [
+      {
+        "type": "LearnerInteraction",
+        "message": "I am confused about environment variables",
+        "terminal": "",
+        "file": "",
+        "timestamp": 1700002000.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "Explaining env vars.",
+        "message": "Environment variables are key-value pairs accessible by processes. Use export VAR=value to set them.",
+        "timestamp": 1700002001.0
+      },
+      {
+        "type": "LearnerInteraction",
+        "message": "user@lab:~$ export SECRET=mytoken123\nuser@lab:~$ /challenge/check\nError: SECRET is not set correctly",
+        "terminal": "Error: SECRET is not set correctly",
+        "file": "",
+        "timestamp": 1700002002.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "The error suggests the value might be wrong.",
+        "message": "Make sure you set the exact value. Try running echo $SECRET to check.",
+        "timestamp": 1700002003.0
+      },
+      {
+        "type": "LearnerInteraction",
+        "message": "is it because I need quotes around the value?",
+        "terminal": "",
+        "file": "",
+        "timestamp": 1700002004.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "Good question about quoting.",
+        "message": "For simple values without spaces, quotes are optional. But it's good practice.",
+        "timestamp": 1700002005.0
+      }
+    ]
+  }
+}

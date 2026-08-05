@@ -1,0 +1,64 @@
+{
+  "tutor": {
+    "dojo_id": "linux",
+    "module_id": "permissions",
+    "challenge_id": "chmod-practice",
+    "challenge_description": "In this challenge you must change the permissions of the file /challenge/pwn to be executable by the owner, then run it to get the flag. Use the chmod command to modify file permissions.",
+    "user_id": "user_99",
+    "gpt_failures": [],
+    "interactions": [
+      {
+        "type": "LearnerInteraction",
+        "message": "In this challenge you must change the permissions of the file /challenge/pwn to be executable by the owner, then run it to get the flag. Use the chmod command to modify file permissions.",
+        "terminal": "",
+        "file": "",
+        "timestamp": 1700001000.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "The learner pasted the challenge description.",
+        "message": "What would you like help with regarding this challenge?",
+        "timestamp": 1700001001.0
+      },
+      {
+        "type": "LearnerInteraction",
+        "message": "how do I use chmod to make a file executable?",
+        "terminal": "",
+        "file": "",
+        "timestamp": 1700001002.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "Explaining chmod.",
+        "message": "You can use chmod +x filename to make it executable.",
+        "timestamp": 1700001003.0
+      },
+      {
+        "type": "LearnerInteraction",
+        "message": "give me a hint",
+        "terminal": "",
+        "file": "",
+        "timestamp": 1700001004.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "They want a hint.",
+        "message": "Try: chmod u+x /challenge/pwn && /challenge/pwn",
+        "timestamp": 1700001005.0
+      },
+      {
+        "type": "LearnerInteraction",
+        "message": "user@lab:~$ chmod u+x /challenge/pwn\nuser@lab:~$ /challenge/pwn\nflag{SUCCESS_HERE}",
+        "terminal": "flag{SUCCESS_HERE}",
+        "file": "",
+        "timestamp": 1700001006.0
+      },
+      {
+        "type": "TutorInteraction",
+        "thoughts": "They got the flag.",
+        "message": "Great job! You got the flag.",
+        "timestamp": 1700001007.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+session_id,chunk_id,result
+session_001,0,concept_guidance_non_procedural
+session_001,2,request_direction
+session_001,4,direct_solution
+session_002,0,pasted_context_dump
+session_002,2,observations
+session_002,4,challenge_understanding
+session_002,6,confirmation
+session_003,0,confirmation
+session_003,2,pasted_context_dump
+session_003,4,course_platform
